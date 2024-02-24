@@ -10,10 +10,12 @@ body {
     font-family: "Barlow", sans-serif;
     font-size: 20px;
     display: flex;
+    background-color: #292828;
 }
 
 .content{
   width: 70%;
+  background-color: #292828;
 }
 
    .sidenav {
@@ -21,6 +23,70 @@ body {
     background-color: rgb(230, 230, 230);
     overflow-x: hidden;
     padding-top: 50px;
+  }
+  
+  /* CSS */
+  .button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+
+  .text a {
+    text-decoration: none;
+    color: white;
   }
 
   .sidenav a {
@@ -123,7 +189,6 @@ body {
   align-items: center;
   height: 60vh;
   margin: 1rem;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
 }
 
 
@@ -203,6 +268,7 @@ body {
   font-size: 30px;
   margin: 1rem;
   text-align: center;
+  color: #f1f1f1;
 }
 
 .card {
@@ -231,7 +297,7 @@ body {
 }
 
 .projects {
-  background-color: whitesmoke;
+  background-color: rgb(44, 42, 42);
   margin-top: 3rem;
 }
 
@@ -253,6 +319,13 @@ body {
 
 .project h3 {
   font-size: 25px;
+  color: white;
+}
+
+.project a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 50px;
 }
 
 #background-video {
@@ -484,6 +557,18 @@ body {
 
 .black-pool {
   width: 100%;
+}
+
+@media screen and (max-width: 468px) {
+  .sidenav {
+    width: 5,000,000px;
+  }
+
+  .right img {
+    display: grid;
+    width: 10vh;
+    height: 10vh;
+  }
 }
 
 
